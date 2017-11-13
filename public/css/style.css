@@ -1,0 +1,176 @@
+.display-user{
+	margin-left: -15px;
+}
+.display-user li{
+	list-style: none;
+	padding: 10px;
+	border-bottom: 1px solid #FAEBD7;
+	
+}
+.display-user li:hover{
+	background: #FAEBD7;
+}
+
+.display-user li a{
+	text-decoration: none;
+	font-size: 15px;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	z-index: 1;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+.content{
+	margin: auto 10%;
+	z-index: 1;
+	position: absolute;
+}
+
+.update-form{
+	margin-top: -300px;
+	animation: mymove 1s 1;
+}
+
+.update-form .form-group{
+	
+}
+
+.pass{
+	/*border-radius: 5px 5px 0px 0px;*/
+}
+#password-confirm{
+	
+	height: 4px;
+	/*border : 0.5px solid #ccc;*/
+	display: none;
+	
+}
+.password-confirm{
+	width:100%;
+	background: red;
+	border-radius: 0px 0px 5px 5px;
+}
+#password-meter{
+	
+	height: 4px;
+	/*border : 0.5px solid #ccc;*/
+	display: none;
+	
+}
+.password-meter{
+	width:100%;
+	background: red;
+	border-radius: 0px 0px 5px 5px;
+}
+.alert_pass{
+	height: inherit;
+	float: left;
+	position: absolute;
+	background: rgba(0,0,0,0.8);
+	margin-left: 65%; 
+	margin-top: -10px;
+	color: white;
+	display: none;
+}
+.alert_pass::after{
+
+}
+
+.short{
+	width: 20%;
+	background: red;
+	border-radius: 0px 0px 0px 5px;
+}
+.weak{
+	width: 40%;
+	background: #FF8C00;
+	border-radius: 0px 0px 0px 5px;
+}
+.ok{
+	width: 60%;
+	background: #FFA500;
+	border-radius: 0px 0px 0px 5px;
+}
+.good{
+	width: 80%;
+	background: #ADFF2F;
+	border-radius: 0px 0px 0px 5px;
+}
+.strong{
+	width: 100%;
+	background: green;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.check{
+	height: 4px;
+	/*border : 0.5px solid #ccc;*/
+	display: none;
+	width:100%;
+	background: red;
+	border-radius: 0px 0px 5px 5px;
+}
+.img-container {
+    position: relative;
+    width: 100%;
+    background: rgba(122,20,60,0.5);
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+	margin: auto;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+.img-container:hover .image {
+  opacity: 0.3;
+}
+
+.img-container:hover .middle {
+  opacity: 0.9;
+}
+
+.image-upload{
+	width: 50%;
+	height: 50%;
+	margin-left: 20%;
+	margin-bottom: 10px; 
+	}
+
+.upload-image{
+	margin-top: -300px;
+	animation: mymove1 1s 1;
+}
+
+.panel-heading{
+	background: #D9D3A4;
+}
+
+
+@keyframes mymove {
+    from {height: 0px;opacity: 0;}
+    to {height: 345px;opacity: 0.8;}
+}
+
+@keyframes mymove1 {
+    from {height: 0px;opacity: 0;}
+    to {height: 160px;opacity: 0.8;}
+}
+
