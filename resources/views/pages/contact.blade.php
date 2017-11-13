@@ -8,22 +8,25 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading" style="background: #D9D3A4;">Contact</div>
-                <div class="panel-body" id="status" style="display: none;">
-                  <h3 style="color: green;">Contact successfully stored !!!</h3>
+                <div class="panel-heading" style="background: #D9D3A4;">Contact Us</div>
+                <div class="panel-body" id="status" style="display: none;text-align: center;background: #DCDCDC;width: 90%;margin: auto;">
+                  <h2 style="color: green;">Contact successfully stored !</h2>
                 </div>
                 
                 <div class="panel-body">
-                <div class="form-horizontal">
+                <div class="form-horizontal" >
                   <!-- {!! Form::open(['url' => '/contacts','class' => 'form-horizontal']) !!} -->
-                      <div class="form-group">
-                                <input type="hidden" value="{!! csrf_token() !!}" name="_token" id="_token" /> 
-                                {!! Form::label('name','Name : ',['class' => 'col-md-2 control-label']) !!}
-                                <div class="col-md-6">
-                                {!! Form::text('name',null,['class' => 'form-control name','placeholder' => 'Full Name*']) !!}
-                                <div class="check" id="name-check"></div>
-                                </div>
-                                <span style="color: red;width: 100px;" id="alert_name"></span>
+                  <form id="myform">
+                    
+                  
+                      <div class="form-group" >
+                          <input type="hidden" value="{!! csrf_token() !!}" name="_token" id="_token" /> 
+                            {!! Form::label('name','Name : ',['class' => 'col-md-2 control-label']) !!}
+                            <div class="col-md-6">
+                            {!! Form::text('name',null,['class' => 'form-control name','placeholder' => 'Full Name*']) !!}
+                            <div class="check" id="name-check"></div>
+                            </div>
+                            <span style="color: red;width: 100px;" id="alert_name"></span>
                             </div>
 
                       <div class="form-group">
@@ -88,6 +91,7 @@
                       
                       </div>
                       {!! Form::submit('Add contact',['class' => 'btn btn-primary col-md-3 ','style'=> 'margin-left:25%;margin-top:10px;', 'id' => 'contact-btn']) !!}
+                      </form>
                   <!-- {!! Form::close() !!} -->
                 </div>
             </div>

@@ -361,8 +361,22 @@ status7 = "undone";
 			success:function(data){
                  	
                  	//console.log(data);
-                 	alert("Response Successfully recorded");
-                 	window.location = "http://local.laravel.com/contact";
+                 	//alert("Response Successfully recorded");
+                 	$('.name').css('border','1px solid #ccc');
+                 	$('.email').css('border','1px solid #ccc');
+                 	$('.mobile').css('border','1px solid #ccc');
+                 	$('.gender').css('border','1px solid #ccc');
+                 	$('.street').css('border','1px solid #ccc');
+                 	$('.city').css('border','1px solid #ccc');
+                 	$('.state').css('border','1px solid #ccc');
+
+                 	$('#status').css('display','block');
+                 	setTimeout(function(){
+					$('#status').fadeOut(1000);
+					},3000);
+                 	//$('#status').css('margin','auto');
+                 	$('#myform')[0].reset();
+                 	//window.location = "http://local.laravel.com/contact";
             	 },
             error: function (data) {
                  	//alert(data);

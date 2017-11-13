@@ -85,7 +85,7 @@ class PagesController extends Controller
         
         $data = $db_obj->store_new_user($data_array);
         
-            echo "<script>alert('Your response successfully recorded.')</script>";
+            //echo "<script>alert('Your response successfully recorded.')</script>";
         
     }
         //print_r($data);
