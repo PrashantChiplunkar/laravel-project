@@ -10,7 +10,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" style="background: #D9D3A4;">Contact Us</div>
                 <div class="panel-body" id="status" style="display: none;text-align: center;background: #DCDCDC;width: 90%;margin: auto;">
-                  <h2 style="color: green;">Your Response is successfully stored !!!</h2>
+                  <h2 style="color: green;">Your Response successfully stored !!!</h2>
                 </div>
                 
                 <div class="panel-body">
